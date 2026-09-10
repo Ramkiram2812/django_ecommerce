@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCart | Home{% endblock %}
+{% block content %}
+<section class="hero">
+ <div class="container py-5"><div class="row align-items-center min-vh-50">
+  <div class="col-lg-7"><span class="badge bg-light text-dark mb-3">NEW SEASON</span><h1 class="display-3 fw-bold">Upgrade your everyday.</h1><p class="lead">Quality tech, sneakers and lifestyle essentials in one clean storefront.</p><a href="{% url 'product_list' %}" class="btn btn-light btn-lg">Shop now →</a></div>
+  <div class="col-lg-5 text-center"><img src="{% static 'images/hero.svg' %}" class="img-fluid hero-img"></div>
+ </div></div>
+</section>
+<div class="container py-5">
+ <div class="d-flex justify-content-between align-items-center mb-4"><h2>Featured products</h2><a href="{% url 'product_list' %}">View all</a></div>
+ <div class="row g-4">{% for product in products %}{% include "store/product_card.html" %}{% empty %}<p>No products yet. Run <code>python manage.py seed_demo</code>.</p>{% endfor %}</div>
+</div>
+{% endblock %}

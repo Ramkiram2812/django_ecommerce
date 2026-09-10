@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="520" viewBox="0 0 700 520">
+<rect width="700" height="520" rx="32" fill="#fee2e2"/>
+<g transform="translate(350 255)">
+<circle r="145" fill="white" opacity=".72"/>
+<rect x="-105" y="-75" width="210" height="150" rx="35" fill="#b91c1c" opacity=".95"/>
+<path d="M-70 5 L70 5" stroke="white" stroke-width="18" stroke-linecap="round"/>
+<path d="M-45 -25 L45 -25" stroke="white" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+</g>
+<text x="350" y="455" text-anchor="middle" font-family="Arial" font-size="32" font-weight="700" fill="#b91c1c">BASS MINI</text>
+<text x="350" y="485" text-anchor="middle" font-family="Arial" font-size="18" fill="#b91c1c" opacity=".75">AUDIO</text>
+</svg>
